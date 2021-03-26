@@ -24,7 +24,7 @@
 
     <!-- lista -->
     <ol>
-      <li v-for="(item, index) in lista"> {{item}} <i class="fas fa-trash-alt"></i></li>
+      <li v-for="(item, index) in lista"> {{item}} <i @click="deleteElement(index)" class="fas fa-trash-alt"></i></li>
     </ol>
     <!-- /lista -->
 

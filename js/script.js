@@ -12,7 +12,10 @@ const app = new Vue (
       ],
     },
     methods: {
-
+      // elmina elemento della lista
+      deleteElement: function (generalIndex) {
+        this.lista.splice(generalIndex, 1);
+      },
     },
   }
 );
