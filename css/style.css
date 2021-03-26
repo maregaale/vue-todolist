@@ -4,12 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Typo */
-h1 {
-  margin-bottom: 30px;
-  color: #008080;
-}
-
+/* Mix */
 #root {
   text-align: center;
   height: 100vh;
@@ -19,6 +14,13 @@ h1 {
   position: relative;
 }
 
+/* Typo */
+h1 {
+  margin-bottom: 30px;
+  color: #008080;
+}
+
+/* lista */
 ol {
   margin: auto;
   display: inline-block;
@@ -44,12 +46,14 @@ ol li i {
   cursor: pointer;
 }
 
+/* input e bottone */
 .input_button_container {
   position: absolute;
   right: 80px;
   top: 250px;
 }
 
+/* input */
 input {
   width: 200px;
   padding: 10px;
@@ -65,11 +69,10 @@ input:focus, button:focus {
   outline: none;
 }
 
-
+/* bottone */
 button {
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid black;
   color: black;
   background-color: coral;
   margin-left: 20px;
@@ -77,4 +80,16 @@ button {
   font-weight: bold;
   vertical-align: middle;
   cursor: pointer;
+  animation-name: scalebutton;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes scalebutton {
+  0% {transform: scale(1);}
+
+  50% {transform: scale(1.05);}
+
+  100% {transform: scale(1);}
+
 }
