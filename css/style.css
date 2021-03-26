@@ -3,3 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Typo */
+h1 {
+  margin-bottom: 30px;
+  color: #008080;
+}
+
+#root {
+  text-align: center;
+  height: 100vh;
+  width: auto;
+  background-color: lightgrey;
+  padding: 100px;
+
+}
+
+ol {
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+}
+
+ol li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #00008B;
+}
+
+ol li:before {
+  width: 20px;
+  content: "";
+  display: inline-block;
+}
+
+ol li i {
+  margin-left: 30px;
+  color: grey;
+}
