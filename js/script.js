@@ -19,7 +19,9 @@ const app = new Vue (
       },
       // metodo che aggiunge elemento della lista
       addElement: function () {
-        this.lista.push(this.input);
+        if (this.input != "") {
+          this.lista.push(this.input);
+        }
 
         // pulisco il valore di input
         this.input = "";
