@@ -10,6 +10,7 @@ const app = new Vue (
         "jquery",
         "vuejs"
       ],
+      input: "",
     },
     methods: {
       // elmina elemento della lista

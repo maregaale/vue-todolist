@@ -16,7 +16,7 @@ h1 {
   width: auto;
   background-color: lightgrey;
   padding: 100px;
-
+  position: relative;
 }
 
 ol {
@@ -41,5 +41,40 @@ ol li:before {
 ol li i {
   margin-left: 30px;
   color: grey;
+  cursor: pointer;
+}
+
+.input_button_container {
+  position: absolute;
+  right: 80px;
+  top: 250px;
+}
+
+input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  background-color: coral;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  vertical-align: middle;
   cursor: pointer;
 }
