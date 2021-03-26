@@ -13,9 +13,16 @@ const app = new Vue (
       input: "",
     },
     methods: {
-      // elmina elemento della lista
+      // metodo che elmina elemento della lista
       deleteElement: function (generalIndex) {
         this.lista.splice(generalIndex, 1);
+      },
+      // metodo che aggiunge elemento della lista
+      addElement: function () {
+        this.lista.push(this.input);
+
+        // pulisco il valore di input
+        this.input = "";
       },
     },
   }
